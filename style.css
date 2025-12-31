@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* 💜 PURPLE GRADIENT BACKGROUND */
+body {
+  background: linear-gradient(135deg, #7b2cbf, #9d4edd);
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR - Deep Purple */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #5a189a; /* Deep purple */
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  z-index: 1000;
+  border-radius: 0 0 15px 15px;
+}
+
+.navbar a {
+  color: #fff; /* White links */
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffcc00; /* Yellow on hover */
+  transform: scale(1.1);
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+.hero-container {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.name-highlight {
+  color: #ffcc00;
+}
+
+.typing {
+  margin: 15px 0;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+/* BUTTONS - Yellow Gradient */
+.hero-btn,
+.btn.hero-btn,
+.project-card .btn,
+#skills .btn {
+  background: linear-gradient(135deg, #ffcc00, #ffd966);
+  color: #000;
+  padding: 10px 22px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.hero-btn:hover,
+.btn.hero-btn:hover,
+.project-card .btn:hover,
+#skills .btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 18px rgba(255, 204, 0, 0.4);
+}
+
+/* PROFILE IMAGE */
+.profile-pic {
+  width: 250px;
+  border-radius: 50%;
+  border: 4px solid #ffcc00;
+  box-shadow: 0 0 20px rgba(255, 204, 0, 0.5);
+}
+
+/* SECTIONS */
+.section {
+  padding: 80px 10%;
+  margin: 40px auto;
+  border-radius: 25px;
+  width: 90%;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* ABOUT ME */
+#about p {
+  margin: 15px 0;
+  line-height: 1.6;
+}
+
+/* SKILLS SECTION */
+#skills {
+  background: rgba(255,255,255,0.85);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+}
+
+/* SKILL CARDS - Same as Project Cards with Hover */
+.skill-card {
+  background: linear-gradient(135deg, #ffcc00, #ffd966); /* Same as buttons */
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  font-weight: 600;
+  color: #000;
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+  background: #fff3a6; /* Hover color same as project cards */
+}
+
+/* PROJECTS SECTION */
+#projects {
+  background: rgba(255,255,255,0.85);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  background: #fff8cc; /* Soft pastel yellow */
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  background: #fff3a6;
+}
+
+/* CONTACT SECTION */
+#contact {
+  background: rgba(255,255,255,0.85);
+  padding: 80px 10%;
+  border-radius: 25px;
+  text-align: center;
+}
+
+#contact p.email {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #5a189a;
+  margin-bottom: 25px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  color: #5a189a;
+}
+
+.social-icon:hover {
+  color: #ffcc00;
+  transform: scale(1.3);
+}
+
+/* HEADINGS */
+.section h2 {
+  text-align: center;
+  color: #5a189a;
+  margin-bottom: 30px;
+}
